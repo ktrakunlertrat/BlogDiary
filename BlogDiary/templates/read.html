@@ -1,0 +1,22 @@
+{% extends 'navbar.html'%}
+
+{% block content %}
+<h2 align="center">อ่านไดอารี</h2>
+<table class="table table-borderless">
+    <thead>
+      <tr>
+        <th scope="col">หัวข้อ</th>
+        <th scope="col">เนื้อหา</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for post in posts %}
+      <tr>
+        <td>{{post.name}}</td>
+        <td>{{post.desc}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+    
+{% endblock %}

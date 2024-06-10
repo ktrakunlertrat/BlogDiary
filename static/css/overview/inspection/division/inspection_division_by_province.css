@@ -1,0 +1,101 @@
+/* inspection division */
+
+.bg-light-blue {
+  background-color: #00c2ff;
+}
+
+.filter .text-box {
+  display: none;
+}
+
+.filter .search {
+  display: none;
+}
+
+.custom-table {
+  overflow-x: auto;
+  white-space: nowrap;
+  --column-width: 160px;
+  --column-height: 64px;
+}
+
+.custom-table .tr {
+  height: var(--column-height);
+  width: calc(var(--column-width) * 6 + (var(--column-width) * 3));
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.custom-table .tr > .separator {
+  width: 1px;
+  height: calc(var(--column-height) - 1rem);
+  background-color: #d9d9d9;
+}
+.custom-table .custom-table-body .tr > .separator {
+  height: var(--column-height);
+}
+
+.custom-table .tr > .th:not(:first-child),
+.custom-table .tr .th-has-group .th,
+.custom-table .td:not(:first-child) {
+  text-align: center;
+  width: var(--column-width);
+}
+.custom-table .tr > .th:first-child {
+  text-align: center;
+  width: calc(var(--column-width) * 3);
+}
+
+.custom-table .td:first-child {
+  text-align: start;
+  padding-left: 16px;
+  width: calc(var(--column-width) * 3);
+}
+.custom-table .custom-table-heading .grouped-th {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.custom-table .custom-table-heading .grouped-th > .separator {
+  width: 1px;
+  height: calc(var(--column-height) / 2 - 0.5rem);
+  background-color: #d9d9d9;
+}
+.custom-table .custom-table-heading .tr {
+  border-radius: 20px 20px 0 0;
+  background: #00c2ff;
+}
+.custom-table .custom-table-heading .tr > .th,
+.custom-table .custom-table-heading .tr > .th-has-group > span {
+  font-size: 1.5rem;
+}
+
+.custom-table .custom-table-body .tr {
+  border: 1px solid #d9d9d9;
+  border-top: none;
+  cursor: pointer;
+}
+
+.custom-table .custom-table-body > a {
+  text-decoration: none;
+}
+
+/* .custom-table .custom-table-body .tr div {
+  pointer-events: none;
+} */
+
+.custom-table .custom-table-body .tr:has(div.excel):not(.disabled)  {
+  pointer-events: auto;
+}
+.custom-table .custom-table-body .tr:hover {
+  background-color: #d9d9d9;
+}
+.custom-table .custom-table-body {
+  height: 60dvh;
+  width: calc(var(--column-width) * 6 + (var(--column-width) * 3));
+  overflow: hidden;
+  overflow-y: auto;
+  white-space: nowrap;
+}

@@ -1,0 +1,157 @@
+@font-face {
+  src: url("/static/css/sufferer_history/NotoSansThai-VariableFont_wdth\,wght.ttf") format("truetype");
+  font-family: Noto Sans Thai;
+}
+
+#root {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.nav-bar {
+  background: #eb2395;
+  color: #ffffff;
+  z-index: 99;
+}
+
+.nav-bar .user-info div,
+.nav-bar .user-info b,
+.nav-bar .logo-text {
+  font-size: 1rem;
+}
+.fa {
+  font-family: "Font Awesome 5 Free";
+}
+
+.footer {
+  background-color: #eb2395 !important;
+}
+
+#sidebar_btn {
+  display: none;
+}
+
+#sidebar_btn_sufferer_history {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+}
+
+#sidebar_btn_sufferer_history i {
+  line-height: 2rem;
+}
+.main-content {
+  padding: 1rem;
+  flex: 1;
+}
+.main-content * {
+  color: black;
+  font-family: Noto Sans Thai;
+}
+.bg-soft-grey {
+  background-color: #f8f4f4;
+}
+
+.h-200 {
+  height: 200px;
+}
+.hi-100 {
+  height: 100px;
+}
+.h-175 {
+  height: 175px;
+}
+.h-140 {
+  height: 140px;
+}
+
+.fa {
+  font-family: "Font Awesome 5 Free";
+}
+
+#info-area-table-table .table-wrapper {
+  max-height: 200px;
+}
+
+.area-overview .detail-btn {
+  cursor: pointer;
+}
+
+.info-area-table table * {
+  font-size: 12px;
+}
+
+.info-area-table table {
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+}
+.info-area-table table thead {
+  background-color: #e899c6;
+}
+.info-area-table table tbody {
+  background-color: #f8f4f6;
+}
+.info-area-table table td {
+  text-align: center;
+  border: 1px solid white;
+}
+
+.text-pink {
+  color: #eb2395;
+}
+
+.text-blue-deep {
+  color: #060047;
+}
+
+.heading {
+  line-height: 30%;
+}
+
+.heading a {
+  text-decoration: none;
+}
+.heading a:hover,
+.heading a i:hover {
+  color: #c8197c;
+}
+
+#loading-overview {
+  background: #00000097;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+#loading-overview img {
+  position: absolute;
+  margin: 0;
+  animation: spin 1s infinite linear;
+  pointer-events: none;
+  border-color: #000;
+  filter: grayscale(100%);
+}
+
+#loading-overview div {
+  position: absolute;
+  margin: 0;
+  text-align: center;
+  vertical-align: center;
+}
+
+.excel-icon button[data-bs-toggle="modal"] {
+  border: none;
+  background-color: transparent;
+}
+.excel-icon button[data-bs-toggle="modal"]:hover {
+  filter: grayscale(50%);
+}

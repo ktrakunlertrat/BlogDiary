@@ -1,0 +1,17 @@
+{% extends 'navbar.html' %}
+
+{% block content %}
+<h2 align="center">เขียนไดอารี</h2>
+<form action="savePost" method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="id_name">หัวข้อ</label>
+        <input type="text" class="form-control" name="name" id="id_name">
+    </div>
+    <div class="form-group">
+        <label for="id_desc">เนื้อหา</label>
+        <textarea class="form-control" name="description" id="id_desc"></textarea>
+    </div>
+    <input type="submit" value="บันทึก" class="btn btn-primary">
+</form>
+{% endblock %}

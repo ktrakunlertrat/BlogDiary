@@ -1,0 +1,349 @@
+@font-face {
+    src: url("/static/css/sufferer_history/NotoSansThai-VariableFont_wdth\,wght.ttf") format("truetype");
+    font-family: Noto Sans Thai;
+  }
+  
+  #root {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+  }
+  
+  .nav-bar {
+    background: #eb2395;
+    color: #ffffff;
+    z-index: 97;
+  }
+  
+  .nav-bar .user-info div,
+  .nav-bar .user-info b,
+  .nav-bar .logo-text {
+    font-size: 1rem;
+  }
+  .fa {
+    font-family: "Font Awesome 5 Free";
+  }
+  
+  .footer {
+    background-color: #eb2395 !important;
+  }
+  
+  #sidebar_btn {
+    display: none;
+  }
+  
+  #sidebar_btn_sufferer_history {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+  }
+  
+  #sidebar_btn_sufferer_history i {
+    line-height: 2rem;
+  }
+  .main-content {
+    padding: 1rem;
+    flex: 1;
+  }
+  .main-content *,.filter-form * {
+    color: black;
+    font-family: Noto Sans Thai;
+  }
+  .bg-soft-grey {
+    background-color: #f8f4f4;
+  }
+  
+  .h-200 {
+    height: 200px;
+  }
+  .hi-100 {
+    height: 100px;
+  }
+  .h-175 {
+    height: 175px;
+  }
+  .h-140 {
+    height: 140px;
+  }
+  
+  .fa {
+    font-family: "Font Awesome 5 Free";
+  }
+  
+  #info-area-table-table .table-wrapper {
+    max-height: 200px;
+  }
+  
+  .area-overview .detail-btn {
+    cursor: pointer;
+  }
+  
+  .info-area-table table * {
+    font-size: 12px;
+  }
+  
+  .info-area-table table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+  }
+  .info-area-table table thead {
+    background-color: #e899c6;
+  }
+  .info-area-table table tbody {
+    background-color: #f8f4f6;
+  }
+  .info-area-table table td {
+    text-align: center;
+    border: 1px solid white;
+  }
+
+  .heading {
+    line-height: 30%;
+  }
+  
+  .heading a {
+    text-decoration: none;
+  }
+  .heading a:hover,
+  .heading a i:hover {
+    color: #c8197c;
+  }
+  
+  #loading-overview {
+    background: #00000097;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  #loading-overview img {
+    position: absolute;
+    margin: 0;
+    animation: spin 1s infinite linear;
+    pointer-events: none;
+    border-color: #000;
+    filter: grayscale(100%);
+  }
+  
+  #loading-overview div {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    vertical-align: center;
+  }
+  
+  .excel-icon button[data-bs-toggle="modal"] {
+    border: none;
+    background-color: transparent;
+  }
+  .excel-icon button[data-bs-toggle="modal"]:hover {
+    filter: grayscale(50%);
+  }
+
+  .back-button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #fff4f4;
+    font-size: 1.5rem;
+  }
+  
+  .text-pink {
+    color: #eb2395;
+  }
+  
+  .text-blue-deep {
+    color: #060047;
+  }
+  
+  .text-deep-blue{
+    color:#004E99;
+  }
+  
+  .text-light-blue{
+    color:#00c2ff;
+  }
+  .text-orange{
+    color:#E85E51;
+  }
+
+  .filter-form-wrapper{
+    position:relative;
+  }
+  .filter-form{
+    z-index: 99;
+    top:98px;
+    left:50%;
+    transform: translateX(-50%);
+    position:absolute;
+    border: 1px solid #56A1E9;
+    background-color: #fff; 
+    width:365px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .filter-form{
+      top:72px;
+      transform: translateX(0px);
+    }
+  }
+
+  #filter-form-backdrop {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 98;
+  }
+
+  .filter-form span{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color:#3085C3;
+  }
+  
+  .filter-form select{
+    font-weight: normal;
+    /* border:1px solid #3085C3; */
+      /* appearance: none; */
+      /* safari */
+      /* -webkit-appearance: none; */
+      /* other styles for aesthetics */
+      width: 100%;
+      /* font-size: 1.15rem; */
+      padding: 0 0.5rem;
+      background-color: #fff; 
+      border: 1px solid #56A1E9;
+      border-radius: 0.25rem;
+      color: #000;
+      cursor: pointer;
+      outline: none !important;
+    
+  }
+  .filter-form select:focus, .filter-form select:hover{
+    border: 1px solid #3796f0;
+  }
+
+  /* start date */
+
+  .date-wrapper{
+    position: relative;
+  }
+  .date-wrapper i{
+    font-size: 0.8rem;
+    color:#3796f0;
+    pointer-events: none;
+    right:5px;
+    top:50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+
+
+  .filter-form input.date{
+    padding-left: 3px;
+    padding-top: 3px;
+    width:6rem;
+    border-radius: 0.25rem;
+    border: 1px solid #56A1E9;
+    font-size: 0.8rem;
+    outline: none;
+  }
+  .filter-form .date-wrapper > input[type="text"]:focus{
+    border: 2px solid #3796f0;
+  }
+  .filter-form span.dash{
+    color:#3796f0;
+  }
+  /* end date */
+
+
+  .filter-form button{
+    padding:0 16px;
+    margin:0 2px;
+    border-radius: 6px;
+    outline: none;
+    border:none;
+    color:white;
+  }
+  .filter-form #clear-btn{
+    background-color: #8a8a8a;
+  }
+  .filter-form button[type="submit"]{
+    background-color: #3085C3;
+  }
+
+  
+  .filter {
+    padding: 5px;
+  }
+  .filter .options {
+    border: none;
+    background: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+  }
+  .filter .text-box {
+    margin: 0 5px;
+    padding: 0 5px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    height: 32px;
+  }
+  .filter input[type="text"].text-box:focus {
+    outline: none;
+    border: 1px solid #8a8a8a;
+  }
+  .filter .search {
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3085c3;
+    width: 32px;
+    height: 32px;
+  }
+  .filter .options i {
+    color: #d9d9d9;
+  }
+  .filter .search i {
+    color: white;
+  }
+
+
+  a.disabled{
+    pointer-events: none;
+  }
+
+  .datepicker *{
+    color:black;
+  }
+  .datepicker-switch{
+    position:relative;
+  }
+  .datepicker-switch::after{
+    content: attr(data-title);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position:absolute;
+    left:0px;
+  }
